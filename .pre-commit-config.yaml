@@ -5,4 +5,5 @@ repos:
         name: Generate helm README.md
         entry: helm-docs
         language: system
-        files: '(Chart.yaml|values.yaml|requirements.yaml|README\.md\.gotmpl)$'
+        pass_filenames: false
+        files: 'deploy-templates/(Chart.yaml|values.yaml|requirements.yaml|README\.md\.gotmpl)$'
