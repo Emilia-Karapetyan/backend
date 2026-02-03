@@ -35,9 +35,11 @@ A Helm chart for Kubernetes
 | image.repository | string | `"backend"` |  |
 | image.tag | string | `""` | Overrides the image tag whose default is the chart appVersion. |
 | imagePullSecrets[0].name | string | `"regcred"` |  |
+| ingress.annotations | object | `{}` |  |
+| ingress.className | string | `""` |  |
 | ingress.dnsWildcard | string | `"development.krci-dev.cloudmentor.academy"` |  |
 | ingress.enabled | bool | `true` |  |
-| ingress.hosts[0].host | string | `"backend-aoo741er-application-dev.development.krci-dev.cloudmentor.academy"` |  |
+| ingress.hosts[0].host | string | `"edpDefault"` |  |
 | ingress.hosts[0].paths[0].path | string | `"/"` |  |
 | ingress.hosts[0].paths[0].pathType | string | `"ImplementationSpecific"` |  |
 | ingress.tls | list | `[]` |  |
