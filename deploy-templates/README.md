@@ -38,8 +38,8 @@ A Helm chart for Kubernetes
 | ingress.annotations | object | `{}` |  |
 | ingress.className | string | `""` |  |
 | ingress.dnsWildcard | string | `"development.krci-dev.cloudmentor.academy"` |  |
-| ingress.enabled | bool | `false` |  |
-| ingress.hosts[0].host | string | `"edpDefault"` |  |
+| ingress.enabled | bool | `true` |  |
+| ingress.hosts[0].host | string | `"backend-aoo741er-application-dev.development.krci-dev.cloudmentor.academy"` |  |
 | ingress.hosts[0].paths[0].path | string | `"/"` |  |
 | ingress.hosts[0].paths[0].pathType | string | `"ImplementationSpecific"` |  |
 | ingress.tls | list | `[]` |  |
