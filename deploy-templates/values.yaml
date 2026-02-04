@@ -46,11 +46,17 @@ service:
 
 ingress:
   enabled: true
+  dnsWildcard: development.krci-dev.cloudmentor.academy
+  className: ""
+  annotations: {}
+    # kubernetes.io/ingress.class: nginx
+  # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: "backend-aoo741er-application-dev.development.krci-dev.cloudmentor.academy"
+    # If need to use specific host, define host value below. By default when set 'edpDefault' FQDN: <CODEBASE_NAME>-<CODEBASE_NAMESPACE>.<CLUSTER_DNS_WILDCARD>
+    - host: backend-aoo741er-application-dev.development.krci-dev.cloudmentor.academy
       paths:
         - path: /
-          pathType: Prefix
+          pathType: ImplementationSpecific
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
